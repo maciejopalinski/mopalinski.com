@@ -1,3 +1,3 @@
 ---
-title: "Maciej Opaliński"
+title: 'Maciej Opaliński'
 ---
