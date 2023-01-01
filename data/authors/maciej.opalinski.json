@@ -1,0 +1,17 @@
+{
+    "name": "Maciej Opaliński",
+    "image": "img/avatar.png",
+    "bio": "Developer",
+    "social": [
+        { "rss-square": "/index.xml" },
+        { "email": "mailto:maciej@mopalinski.com" },
+        { "keybase": "https://keybase.io/maciejopalinski" },
+        { "git": "https://git.mopalinski.com/maciej.opalinski" },
+        { "github": "https://github.com/maciejopalinski" },
+        {
+            "stack-overflow": "https://stackoverflow.com/users/12126676/poprostumieciek"
+        },
+        { "youtube": "https://youtube.com/@maciej.opalinski" },
+        { "reddit": "https://reddit.com/u/poprostumieciek" }
+    ]
+}

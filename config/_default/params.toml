@@ -1,0 +1,130 @@
+# -- Theme Options --
+# These options control how the theme functions and allow you to
+# customise the display of your website.
+#
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/configuration/#theme-parameters
+
+colorScheme = "blowfish"
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+
+enableSearch = true
+enableCodeCopy = true
+
+mainSections = ["posts"]
+
+showViews = false
+showLikes = false
+
+# robots = ""
+
+disableImageZoom = false
+disableImageOptimization = false
+
+defaultBackgroundImage = "/img/iceland.jpg"
+
+[header]
+  layout = "fixed"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = false
+  showScrollToTop = true
+
+[homepage]
+  layout = "background"
+  homepageImage = "/img/iceland.jpg"
+  showRecent = true
+  showRecentItems = 10
+  showMoreLink = true
+  cardView = true
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = true
+
+[article]
+  showDate = true
+  showDateUpdated = true
+  showAuthor = false
+  showHero = true
+  heroStyle = "background"
+  layoutBackgroundBlur = true
+  layoutBackgroundHeaderSpace = true
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = true
+  editURL = "https://git.mopalinski.com/maciej.opalinski/mopalinski.com/src/branch/master/content"
+  editAppendPath = true
+  seriesOpened = true
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true 
+  showAuthorsBadges = true
+  showWordCount = false
+  # showComments = true # TODO: comments
+  sharingLinks = false # !!! TODO: https://github.com/nunocoracao/blowfish/issues/361
+  showSummary = true
+
+[list]
+  showHero = true
+  heroStyle = "background"
+  showBreadcrumbs = true
+  layoutBackgroundBlur = true
+  layoutBackgroundHeaderSpace = true
+  showTableOfContents = true
+  showSummary = false
+  showCards = true
+  groupByYear = true
+  cardView = true
+  cardViewScreenWidth = false
+
+[sitemap]
+  excludedKinds = ["taxonomy","term"]
+
+[taxonomy]
+  showTermCount = true
+  showHero = true
+  heroStyle = "background"
+  showBreadcrumbs = true
+  showTableOfContents = true
+  cardView = true
+
+[term]
+  showHero = true
+  heroStyle = "background"
+  showBreadcrumbs = true
+  showTableOfContents = true
+  groupByYear = true
+  cardView = true
+  cardViewScreenWidth = false
+
+[firebase]
+  # apiKey = "AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY"
+  # authDomain = "blowfish-21fff.firebaseapp.com"
+  # projectId = "blowfish-21fff"
+  # storageBucket = "blowfish-21fff.appspot.com"
+  # messagingSenderId = "60108104191"
+  # appId = "1:60108104191:web:039842ebe1370698b487ca"
+  # measurementId = "G-PEDMYR1V0K"
+
+[fathomAnalytics]
+  # site = "ABC12345"
+  # domain = "llama.yoursite.com"
+
+[buymeacoffee]
+  # identifier = "nunocoracao"
+  # globalWidget = true
+  # globalWidgetMessage = ""
+  # globalWidgetColor = "#FFDD00"
+  # globalWidgetPosition = "Right"
+
+[verification]
+  # google = ""
+  # bing = ""
+  # pinterest = ""
+  # yandex = ""

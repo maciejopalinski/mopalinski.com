@@ -1,0 +1,29 @@
+languageCode = "en"
+languageName = "English"
+displayName = "EN"
+isoCode = "en"
+weight = 1
+rtl = false
+
+title = "Maciej Opaliński"
+# logo = "img/blowfish_logo_transparent.png"
+description = "This is my personal website"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+dateFormat = "2 January 2006"
+
+[author]
+  name = "Maciej Opaliński"
+  image = "img/avatar.png"
+  headline = "Developer"
+  # bio = "A powerful, lightweight theme for Hugo built with Tailwind CSS."
+  links = [
+    { rss-square = "/index.xml" },
+    { email = "mailto:maciej@mopalinski.com" },
+    { keybase = "https://keybase.io/maciejopalinski" },
+    { git = "https://git.mopalinski.com/maciej.opalinski" },
+    { github = "https://github.com/maciejopalinski" },
+    { stack-overflow = "https://stackoverflow.com/users/12126676/poprostumieciek" },
+    { youtube = "https://youtube.com/@maciej.opalinski" },
+    { reddit = "https://reddit.com/u/poprostumieciek" },
+  ]
