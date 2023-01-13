@@ -66,8 +66,8 @@ defaultBackgroundImage = "/img/iceland.jpg"
   showTaxonomies = true 
   showAuthorsBadges = true
   showWordCount = false
-  # showComments = true # TODO: comments
-  sharingLinks = false # !!! TODO: https://github.com/nunocoracao/blowfish/issues/361
+  showComments = true
+  sharingLinks = false
   showSummary = true
 
 [list]
