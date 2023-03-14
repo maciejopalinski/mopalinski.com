@@ -5,4 +5,4 @@ date: 2023-01-01T00:19:53+01:00
 authors: ['maciej.opalinski']
 ---
 
-Hello, this is my fist post. This is enough for now. Bye!
+Hello, this is my first post. This is enough for now.
