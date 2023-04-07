@@ -112,7 +112,7 @@ Let's explore the initramfs image!
 
 The simplest method of extracting the initramfs image is to use the `lsinitcpio` tool from `mkinitcpio` package.
 
-```bash
+```shell
 mkdir initramfs/
 cd initramfs/
 sudo cp /boot/initramfs-linux.img ./ # working on a copy
@@ -122,7 +122,7 @@ lsinitcpio -x initramfs-linux.img # extract to the current directory, run withou
 
 First thing that the Linux kernel executes is the `/init` script, so let's have a look at it.
 
-```bash
+```shell
 #!/usr/bin/ash
 # SPDX-License-Identifier: GPL-2.0-only
 
@@ -166,7 +166,7 @@ Next, we evaluate the `/init_functions` script. The script is much longer and co
 
 After that, we call `mount_setup` from the mentioned `/init_functions` script. Here is how the function looks:
 
-```bash
+```shell
 mount_setup() {
     mount -t proc proc /proc -o nosuid,noexec,nodev
     mount -t sysfs sys /sys -o nosuid,noexec,nodev
@@ -193,13 +193,13 @@ It basically mount all required system directories like `/proc`, `/sys`, etc.
 
 Next step is quite interesting, because we are calling `parse_cmdline` function. The function makes sure that the Linux boot params are easily accessible as shell variables from inside the script. This is done for convenience purposes. I won't show the entire function, as it is rather complicated. After verifying that the shell variable is valid it just calls eval in the following way:
 
-```bash
+```shell
 eval "$key"='${value:-y}'
 ```
 
 Finally, we can mount our real root filesystem, where all our persistent files are stored. We call `$mount_handler`, which was previously defined as `default_mount_handler`. Here is the function definition:
 
-```bash
+```shell
 default_mount_handler() {
     msg ":: mounting '$root' on real root"
     if ! mount -t "${rootfstype:-auto}" -o "${rwopt:-ro}${rootflags:+,$rootflags}" "$root" "$1"; then

@@ -15,7 +15,7 @@ In a [previous article](/posts/the-linux-boot-process-explained) I explained the
 
 First, we need to compile the Linux kernel. To do this, we need to obtain the Linux source code. Let's clone the git repository.
 
-```bash
+```shell
 git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git # clone the git repository
 cd linux/
 ```
@@ -71,7 +71,7 @@ Notice the infinite `while` loop at the end of the `main` function. We can't exi
 
 We compile it using the following command:
 
-```bash
+```shell
 gcc -static init.c -o init
 ```
 
@@ -81,7 +81,7 @@ The executable is ready to be put into the initramfs and executed by the kernel.
 
 To create the initramfs, use the following commands:
 
-```bash
+```shell
 mkdir initramfs/
 cp init initramfs/
 cd initramfs/
@@ -97,7 +97,7 @@ Our initramfs is ready.
 
 Now, we can boot our "system" using QEMU. Go back to the Linux kernel repository.
 
-```bash
+```shell
 qemu-system-x86_64 -kernel arch/x86/boot/bzImage -initrd "$ROOTFS_PATH"
 ```
 
@@ -109,7 +109,7 @@ After running the command, we can see that `/init` has been executed successfull
 
 To create an ISO image that you can run in any other virtualization software or even a real hardware, run the following command:
 
-```bash
+```shell
 make isoimage FDINITRD="$ROOTFS_PATH" FDARGS="initrd=root.cpio.gz"
 ```
 
@@ -123,7 +123,7 @@ BusyBox is a software suite that provides several Unix utilities in a single exe
 
 First, we need to clone, configure and compile BusyBox.
 
-```bash
+```shell
 git clone https://github.com/mirror/busybox.git
 cd busybox/
 make defconfig
@@ -136,7 +136,7 @@ This will generate many files inside `initramfs/` directory.
 
 Next, we add the `/init` script inside the initramfs.
 
-```bash
+```shell
 cd initramfs/
 touch init
 chmod +x init
@@ -144,7 +144,7 @@ chmod +x init
 
 Paste the following contents into the `/init` script.
 
-```bash
+```shell
 #!/bin/sh
 
 # mount required directories
@@ -161,14 +161,14 @@ poweroff -f
 
 Finally, let's pack the initramfs.
 
-```bash
+```shell
 find . | cpio -oH newc | gzip > ../root.cpio.gz
 ROOTFS_PATH="$(pwd)/../root.cpio.gz"
 ```
 
 Go back to the Linux kernel repository and again, create the ISO using the following command:
 
-```bash
+```shell
 make isoimage FDINITRD="$ROOTFS_PATH" FDARGS="initrd=root.cpio.gz"
 ```
 
@@ -178,7 +178,7 @@ Now, the ISO image that was generated in `arch/x86/boot/image.iso` is basically 
 
 To run it on a real hardware, you need to make a bootable USB. Insert your empty USB drive and make sure to check its device path using something like `fdisk -l` or `lsblk`. My USB drive is `/dev/sdc`. To flash the USB drive with the ISO image, run the following command.
 
-```bash
+```shell
 sudo dd if=arch/x86/boot/image.iso of=/dev/sdc
 ```
 
