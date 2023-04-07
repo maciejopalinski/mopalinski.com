@@ -20,6 +20,11 @@
   pageRef = "about-me"
   weight = 20
 
+[[main]]
+  name = "Contact"
+  pageRef = "contact"
+  weight = 30
+
 # [[main]]
 #   identifier = "twitter"
 #   pre = "twitter"
