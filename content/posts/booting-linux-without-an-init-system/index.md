@@ -1,5 +1,5 @@
 ---
-title: 'Booting Linux kernel without an init system'
+title: 'Booting Linux without an init system'
 date: 2023-04-06T17:20:00+02:00
 authors: ['maciej.opalinski']
 tags: ['linux']
