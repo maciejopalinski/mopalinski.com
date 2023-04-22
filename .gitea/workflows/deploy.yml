@@ -10,7 +10,7 @@ jobs:
 
         steps:
             - name: Deploy using ssh
-              uses: github.com/appleboy/ssh-action@master
+              uses: https://github.com/appleboy/ssh-action@master
               with:
                   host: ${{ secrets.HOST }}
                   port: ${{ secrets.PORT }}
