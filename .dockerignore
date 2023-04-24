@@ -1,0 +1,11 @@
+Dockerfile
+.dockerignore
+
+.gitea/
+.hugo_build.lock
+
+**/.git/
+**/public/
+**/resources/
+
+themes/blowfish/exampleSite/
