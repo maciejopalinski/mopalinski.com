@@ -9,13 +9,17 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout repository
-              uses: actions/checkout@v3
+            - name: Deploy using ssh
+              uses: https://github.com/appleboy/ssh-action@master
               with:
-                  fetch-depth: 0
-
-            - name: Push to Dokku
-              uses: https://github.com/dokku/github-action@master
-              with:
-                  git_remote_url: ${{ secrets.GIT_REMOTE_URL }}
-                  ssh_private_key: ${{ secrets.PRIVATE_KEY }}
+                  host: ${{ secrets.HOST }}
+                  port: ${{ secrets.PORT }}
+                  username: ${{ secrets.USERNAME }}
+                  key: ${{ secrets.PRIVATE_KEY }}
+                  script: |
+                      cd mopalinski.com/
+                      git pull origin master
+                      git submodule init
+                      git submodule update
+                      rm -rf public/*
+                      hugo --minify
