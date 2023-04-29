@@ -9,6 +9,11 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+
             - name: Push to Dokku
               uses: https://github.com/dokku/github-action@master
               with:
