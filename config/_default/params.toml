@@ -48,6 +48,7 @@ defaultBackgroundImage = "/img/iceland.jpg"
   showDate = true
   showDateUpdated = true
   showAuthor = false
+  showAuthorBottom = true
   showHero = true
   heroStyle = "background"
   layoutBackgroundBlur = true
