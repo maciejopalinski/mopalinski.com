@@ -1,4 +1,4 @@
-name: Deploy to VPS
+name: Deploy mopalinski.com
 
 on:
     push:
@@ -16,10 +16,3 @@ jobs:
                   port: ${{ secrets.PORT }}
                   username: ${{ secrets.USERNAME }}
                   key: ${{ secrets.PRIVATE_KEY }}
-                  script: |
-                      cd mopalinski.com/
-                      git pull origin master
-                      git submodule init
-                      git submodule update
-                      rm -rf public/*
-                      hugo --minify
