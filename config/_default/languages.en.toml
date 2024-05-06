@@ -14,7 +14,6 @@ dateFormat = "2 January 2006"
 
 [author]
   name = "Maciej Opaliński"
-  image = "img/avatar.png"
   headline = "Developer"
   # bio = "A powerful, lightweight theme for Hugo built with Tailwind CSS."
   links = [
