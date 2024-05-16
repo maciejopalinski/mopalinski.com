@@ -1,6 +1,6 @@
-FROM klakegg/hugo:alpine AS build
+FROM alpine:latest AS build
 
-RUN apk add git
+RUN apk update && apk add git && apk add --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hugo
 
 WORKDIR /app
 
