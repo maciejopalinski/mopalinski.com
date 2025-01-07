@@ -4,23 +4,23 @@ weight = 1
 title = "Maciej Opaliński"
 
 [params]
-  displayName = "EN"
-  isoCode = "en"
-  rtl = false
-  dateFormat = "2 January 2006"
-  # logo = "img/blowfish_logo_transparent.png"
-  description = "This is my personal website"
-  # copyright = "Copy, _right?_ :thinking_face:"
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+# logo = "img/blowfish_logo_transparent.png"
+description = "This is my personal website"
+# copyright = "Copy, _right?_ :thinking_face:"
 
-[author]
-  name = "Maciej Opaliński"
-  headline = "Developer"
-  # bio = "A powerful, lightweight theme for Hugo built with Tailwind CSS."
-  links = [
-    { rss-square = "/index.xml" },
-    { email = "mailto:maciej@mopalinski.com" },
-    { keybase = "https://keybase.io/maciejopalinski" },
-    { git = "https://git.mopalinski.com/maciej.opalinski" },
-    { github = "https://github.com/maciejopalinski" },
-    { youtube = "https://youtube.com/@maciej.opalinski" },
-  ]
+[params.author]
+name = "Maciej Opaliński"
+headline = "Software engineer"
+# bio = "A powerful, lightweight theme for Hugo built with Tailwind CSS."
+links = [
+  { rss-square = "/index.xml" },
+  { email = "mailto:maciej@mopalinski.com" },
+  { keybase = "https://keybase.io/maciejopalinski" },
+  { git = "https://git.mopalinski.com/maciej.opalinski" },
+  { github = "https://github.com/maciejopalinski" },
+  { youtube = "https://youtube.com/@maciej.opalinski" },
+]
