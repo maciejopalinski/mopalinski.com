@@ -186,4 +186,7 @@ Now you can reboot your computer, go into your motherboard's boot menu and boot 
 
 ## Video
 
-{{< youtube PzwiDz3Ppug >}}
+{{< video
+    src="video.webm"
+    caption="Minimal Linux Distribution with BusyBox"
+>}}
