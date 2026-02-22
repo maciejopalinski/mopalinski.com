@@ -1,13 +1,9 @@
-FROM alpine:latest AS build
-
-RUN apk update && apk add git && apk add --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hugo
-
-WORKDIR /app
+FROM ghcr.io/gohugoio/hugo:v0.155.3 AS build
 
 COPY . .
 
-RUN hugo --minify
+RUN hugo build --minify
 
 FROM nginx:latest AS server
 
-COPY --from=build /app/public /usr/share/nginx/html
+COPY --from=build /project/public /usr/share/nginx/html
