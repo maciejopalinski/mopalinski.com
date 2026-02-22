@@ -101,10 +101,10 @@ I replaced some unimportant files with `(...)`.
 
 Let's explain what every file and directory is for:
 
--   `efi/` is the directory to which my EFI partition mounts. I'm running UEFI, so GRUB bootloader lives there along with the default Windows Boot Manager;
--   `grub/` is the directory in which GRUB keeps its config files, like `grub.cfg`;
--   `initramfs-linux.img` and `initramfs-linux-fallback.img` are the initramfs images themselves;
--   `vmlinuz-linux` is the compressed Linux kernel, there instead could be `vmlinux-linux` which is uncompressed Linux kernel.
+- `efi/` is the directory to which my EFI partition mounts. I'm running UEFI, so GRUB bootloader lives there along with the default Windows Boot Manager;
+- `grub/` is the directory in which GRUB keeps its config files, like `grub.cfg`;
+- `initramfs-linux.img` and `initramfs-linux-fallback.img` are the initramfs images themselves;
+- `vmlinuz-linux` is the compressed Linux kernel, there instead could be `vmlinux-linux` which is uncompressed Linux kernel.
 
 Let's explore the initramfs image!
 
