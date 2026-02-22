@@ -11,59 +11,40 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-name = "Posts"
-pageRef = "posts"
-weight = 10
+  name = "Posts"
+  pageRef = "posts"
+  weight = 10
 
 [[main]]
-name = "About Me"
-pageRef = "about-me"
-weight = 20
+  name = "About Me"
+  pageRef = "about-me"
+  weight = 20
 
 [[main]]
-name = "Contact"
-pageRef = "contact"
-weight = 30
-
-# [[main]]
-#   identifier = "twitter"
-#   pre = "twitter"
-#   url = "https://twitter.com/burufugu"
-#   weight = 60
-
-# [[main]]
-#   identifier = "mastodon"
-#   pre = "mastodon"
-#   url = "https://masto.ai/@blowfish"
-#   weight = 70
-
-# [[main]]
-#   identifier = "github"
-#   pre = "github"
-#   url = "https://github.com/nunocoracao/blowfish"
-#   weight = 80
-
+  name = "Contact"
+  pageRef = "contact"
+  weight = 30
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
 [[footer]]
-name = "Authors"
-pageRef = "authors"
-weight = 10
+  name = "Authors"
+  pageRef = "authors"
+  weight = 10
 
 [[footer]]
-name = "Tags"
-pageRef = "tags"
-weight = 20
+  name = "Tags"
+  pageRef = "tags"
+  weight = 20
 
 [[footer]]
-name = "Categories"
-pageRef = "categories"
-weight = 30
+  name = "Categories"
+  pageRef = "categories"
+  weight = 30
 
 [[footer]]
-name = "Series"
-pageRef = "series"
-weight = 40
+  name = "Series"
+  pageRef = "series"
+  weight = 40
