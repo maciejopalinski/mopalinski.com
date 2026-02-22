@@ -6,4 +6,6 @@ RUN hugo build --minify
 
 FROM nginx:latest AS server
 
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+
 COPY --from=build /project/public /usr/share/nginx/html
