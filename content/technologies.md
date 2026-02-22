@@ -76,7 +76,6 @@ Here are all the technologies that I use in my projects.
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" alt="Material UI" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original-wordmark.svg" alt="Discord.js" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original-wordmark.svg" alt="SocketIO" />
 </div>
 
@@ -89,7 +88,6 @@ Here are all the technologies that I use in my projects.
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Gitea_Logo.svg" alt="Gitea" />
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/SyncthingLogoHorizontal.svg" alt="Syncthing" />
     <img src="https://raw.githubusercontent.com/thelounge/thelounge/master/client/img/logo-vertical-transparent-bg.svg" alt="TheLounge" />
-    <img src="https://www.portainer.io/hubfs/portainer-logo-black.svg" alt="Portainer" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original-wordmark.svg" alt="GitLab" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original-wordmark.svg" alt="Grafana" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original-wordmark.svg" alt="Prometheus" />
